@@ -62,6 +62,7 @@ std::string s = "Hello"     // Creates string object with value "Hello"
 std::string s = R"(Hello
 World)";                    // Creates string object with value "Hello\nWorld"
 int* p;                     // p is a pointer to (address of) int
+//https://www.geeksforgeeks.org/double-pointer-pointer-pointer-c/
 char* s="hello";            // s points to unnamed array containing "hello"
 void* p=nullptr;            // Address of untyped memory (nullptr is 0)
 int& r=x;                   // r is a reference to (alias of) int x
@@ -137,7 +138,8 @@ int f(int x, int y);        // f is a function taking 2 ints and returning int
 void f();                   // f is a procedure taking no arguments
 void f(int a=0);            // f() is equivalent to f(0)
 f();                        // Default return type is int
-inline f();                 // Optimize for speed //https://www.cplusplus.com/articles/2LywvCM9/ //https://www.geeksforgeeks.org/inline-functions-cpp/
+inline f();                 // Optimize for speed 
+//https://www.cplusplus.com/articles/2LywvCM9/ //https://www.geeksforgeeks.org/inline-functions-cpp/
 f() { statements; }         // Function definition (must be global)
 T operator+(T x, T y);      // a+b (if type T) calls operator+(a, b)
 T operator-(T x);           // -a calls function operator-(a)
@@ -258,7 +260,8 @@ public:                     // Accessible to all
     typedef int V;          // T::V means int
 };
 void T::f() {               // Code for member function f of class T
-    this->x = x;}           // this is address of self (means x=x;) //[This is a pointer] //https://www.geeksforgeeks.org/this-pointer-in-c/
+    this->x = x;}           // this is address of self (means x=x;) //[This is a pointer] 
+    //https://www.geeksforgeeks.org/this-pointer-in-c/
 int T::y = 2;               // Initialization of static member (required)
 T::l();                     // Call to static member
 T t;                        // Create object t implicit call constructor
@@ -266,7 +269,8 @@ t.f();                      // Call method f on object t
 
 struct T {                  // Equivalent to: class T { public:
   virtual void i();         // May be overridden at run time by derived class
-  virtual void g()=0; };    // Must be overridden (pure virtual) //https://www.geeksforgeeks.org/pure-virtual-functions-and-abstract-classes/
+  virtual void g()=0; };    // Must be overridden (pure virtual) 
+  //https://www.geeksforgeeks.org/pure-virtual-functions-and-abstract-classes/
 class U: public T {         // Derived class U inherits all members of base T
   public:
   void g(int) override; };  // Override method g
