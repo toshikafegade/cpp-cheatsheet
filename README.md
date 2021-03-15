@@ -137,7 +137,7 @@ int f(int x, int y);        // f is a function taking 2 ints and returning int
 void f();                   // f is a procedure taking no arguments
 void f(int a=0);            // f() is equivalent to f(0)
 f();                        // Default return type is int
-inline f();                 // Optimize for speed
+inline f();                 // Optimize for speed //https://www.cplusplus.com/articles/2LywvCM9/ //https://www.geeksforgeeks.org/inline-functions-cpp/
 f() { statements; }         // Function definition (must be global)
 T operator+(T x, T y);      // a+b (if type T) calls operator+(a, b)
 T operator-(T x);           // -a calls function operator-(a)
@@ -176,8 +176,8 @@ p-> x                       // Member x of struct or class pointed to by p
 a[i]                        // i'th element of array a
 f(x,y)                      // Call to function f with arguments x and y
 T(x,y)                      // Object of class T initialized with x and y
-x++                         // Add 1 to x, evaluates to original x (postfix)
-x--                         // Subtract 1 from x, evaluates to original x
+x++                         // assign then increment (postfix)
+x--                         // assign then subtract
 typeid(x)                   // Type of x
 typeid(T)                   // Equals typeid(x) if x is a T
 dynamic_cast< T>(x)         // Converts x to a T, checked at run time.
@@ -187,8 +187,8 @@ const_cast< T>(x)           // Converts x to same type T but not const
 
 sizeof x                    // Number of bytes used to represent object x
 sizeof(T)                   // Number of bytes to represent type T
-++x                         // Add 1 to x, evaluates to new value (prefix)
---x                         // Subtract 1 from x, evaluates to new value
+++x                         // increment then assign (prefix)
+--x                         // Subtract then assign
 ~x                          // Bitwise complement of x
 !x                          // true if x is 0, else false (1 or 0 in C)
 -x                          // Unary minus
