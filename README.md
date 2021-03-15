@@ -258,7 +258,7 @@ public:                     // Accessible to all
     typedef int V;          // T::V means int
 };
 void T::f() {               // Code for member function f of class T
-    this->x = x;}           // this is address of self (means x=x;)
+    this->x = x;}           // this is address of self (means x=x;) //[This is a pointer] //https://www.geeksforgeeks.org/this-pointer-in-c/
 int T::y = 2;               // Initialization of static member (required)
 T::l();                     // Call to static member
 T t;                        // Create object t implicit call constructor
