@@ -266,7 +266,7 @@ t.f();                      // Call method f on object t
 
 struct T {                  // Equivalent to: class T { public:
   virtual void i();         // May be overridden at run time by derived class
-  virtual void g()=0; };    // Must be overridden (pure virtual)
+  virtual void g()=0; };    // Must be overridden (pure virtual) //https://www.geeksforgeeks.org/pure-virtual-functions-and-abstract-classes/
 class U: public T {         // Derived class U inherits all members of base T
   public:
   void g(int) override; };  // Override method g
