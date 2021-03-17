@@ -94,8 +94,8 @@ auto& s = singleton::instance();
 int x;                      // Auto (memory exists only while in scope)
 static int x;               // Global lifetime even if local scope
 extern int x;               // Information only, declared elsewhere
-constexpre;                 // performance improvement by doing computations at compile time rather than run time 
-//https://www.geeksforgeeks.org/understanding-constexper-specifier-in-c/
+constexpr;                 // performance improvement by doing computations at compile time rather than run time 
+//https://en.cppreference.com/w/cpp/language/constexpr
 ```
 
 ## Statements
